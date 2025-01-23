@@ -2,6 +2,9 @@ body {
   padding: 5px 20px;
 }
 
+.hero {
+  padding: 40px;
+}
 .container img {
   width: 250px;
 }
@@ -59,6 +62,8 @@ button {
 .info-section {
   flex-direction: column;
   text-align: center;
+  margin-bottom: 40px;
+  padding: 40px;
 }
 
 .info-text {
@@ -73,7 +78,7 @@ button {
 }
 
 .card {
-  width: 150px;
+  width: 120px;
 }
 .info-section img {
   width: 80px;
@@ -86,4 +91,60 @@ button {
   display: block;
   font-weight: 600;
   margin-bottom: 4px;
+}
+
+.testimonial-section {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  height: auto;
+  max-width: 500px;
+}
+
+.quoted {
+  align-self: flex-end;
+}
+
+.cta-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.cta-section > .container {
+  background-color: #3882f6;
+  justify-content: space-between;
+  display: flex;
+  max-width: 700px;
+  border-radius: 8px;
+  padding: 24px 80px;
+  gap: 80px;
+}
+
+.cta {
+  max-width: 400px;
+}
+
+.cta-section .button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer > div {
+  text-align: center;
 }
