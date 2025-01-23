@@ -58,3 +58,22 @@ button {
   padding: 4px 16px;
   width: fit-content;
 }
+
+.info-section {
+  flex-direction: column;
+  text-align: center;
+}
+
+.info-text {
+  margin-bottom: 32px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.card {
+  max-width: 200px;
+}
