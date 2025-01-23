@@ -1,10 +1,23 @@
+* {
+  font-family: "Roboto";
+}
+
 body {
-  padding: 5px 20px;
+  margin: 0px;
 }
 
 .hero {
-  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 40px 40px 40px;
+  align-items: center;
 }
+
+.hero,
+.footer {
+  background-color: #1f2937;
+}
+
 .container img {
   width: 250px;
 }
@@ -13,8 +26,24 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 800px;
 }
 
+.link-list a,
+.hero-subtext {
+  font-size: 18px;
+  color: #e5e7eb;
+}
+.logo-text {
+  font-size: 24px;
+  color: #f9faf8;
+}
+.hero-text {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 900;
+  min-width: 262px;
+}
 /* format for links */
 
 ul {
@@ -31,9 +60,9 @@ a {
 .hero-section {
   display: flex;
   justify-content: space-between;
-  gap: 36px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  gap: 54px;
+  width: 800px;
+  padding: 80px 0;
 }
 
 .left {
@@ -55,8 +84,11 @@ a {
 }
 
 button {
-  padding: 4px 16px;
+  padding: 8px 24px;
   width: fit-content;
+  background-color: #3882f6;
+  border-radius: 5px;
+  border-width: 0;
 }
 
 .info-section {
@@ -69,6 +101,9 @@ button {
 .info-text {
   padding-top: 32px;
   padding-bottom: 32px;
+  font-weight: 900;
+  font-size: 36px;
+  color: #1f2937;
 }
 
 .container {
@@ -78,11 +113,11 @@ button {
 }
 
 .card {
-  width: 120px;
+  width: 140px;
 }
 .info-section img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 16px;
 }
@@ -96,7 +131,15 @@ button {
 .testimonial-section {
   display: flex;
   justify-content: center;
-  padding: 40px;
+  padding: 60px 0;
+  background-color: #e5e7eb;
+}
+
+.quotation {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 100;
+  color: #1f2937;
 }
 
 .quote {
@@ -106,16 +149,17 @@ button {
   height: auto;
   max-width: 500px;
 }
-
 .quoted {
   align-self: flex-end;
+  font-weight: 900;
+  margin-top: 16px;
 }
 
 .cta-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
+  padding: 60px;
 }
 
 .cta-section > .container {
@@ -132,19 +176,22 @@ button {
   max-width: 400px;
 }
 
-.cta-section .button {
+.cta-section .button .hero-button {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
+  border: 1px solid #f9faf8;
 }
 
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 40px;
 }
 
 .footer > div {
   text-align: center;
+  color: #e5e7eb;
 }
