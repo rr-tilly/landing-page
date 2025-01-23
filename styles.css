@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 40px;
+}
+body > div {
+  display: flex;
+}
+
+/*temp set imge size*/
+.container img {
+  width: 250px;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero-section {
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  align-items: center;
+}
+
+.left {
+  flex: 2 1 300px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.right .image-holder {
+  display: flex;
+  justify-content: end;
+}
+
+.image-holder img {
+  width: 300px;
+  flex-shrink: 1 1 auto;
+  object-fit: cover;
+}
+
+button {
+  padding: 4px 16px;
+  width: fit-content;
+}
